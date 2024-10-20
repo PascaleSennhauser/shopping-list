@@ -1,0 +1,16 @@
+.article {
+    background-color: rgba(255, 250, 147, 0.5);
+    border: 1px solid #ffb972;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.article:hover {
+    cursor: pointer;
+    background-color: rgb(255, 250, 147);
+}

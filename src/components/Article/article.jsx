@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Article.css';
+import classes from './Article.module.css';
 
 class Article extends Component {
     state = {  } 
     render() { 
         return (
-            <div className="article-container">
+            <div className={classes.article}>
                 Apple
             </div>
         );

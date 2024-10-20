@@ -6,7 +6,7 @@ class Notepad extends Component {
     render() { 
         return (
                 <div className="notepad">
-
+                    <h2>Shopping list:</h2>
                 </div>
         );
     }

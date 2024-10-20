@@ -3,7 +3,7 @@ import AllArticles from './components/AllArticles/allArticles';
 import Navbar from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
 import Notepad from './components/Notepad/notepad';
-import AddArticle from './components/AddArtcle/addArticle';
+import AddArticle from './components/AddArticle/addArticle';
 
 class App extends Component {
     state = {}
