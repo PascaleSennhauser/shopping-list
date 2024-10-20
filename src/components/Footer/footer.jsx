@@ -6,7 +6,7 @@ class Footer extends Component {
     render() { 
         return (
             <footer>
-                <a href="/">Imprint & Privacy Policy</a>
+                <a href="imprint">Imprint & Privacy Policy</a>
             </footer>
         );
     }

@@ -8,6 +8,7 @@ input {
     border: 1px solid #5ba8ff;
     border-radius: 10px;
     outline: none;
+    font-family: 'Almarai';
 }
 
 button {
@@ -16,6 +17,7 @@ button {
     background-color: rgba(167, 231, 255, 0.5);
     border: 1px solid #5ba8ff;
     border-radius: 10px;
+    font-family: 'Almarai';
 }
 
 button:hover {

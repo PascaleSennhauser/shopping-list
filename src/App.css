@@ -24,28 +24,6 @@ body {
     max-height: 100vh;
 }
 
-.content-container {
-    display: flex;
-    height: 100%;
-    background-color: rgba(221, 221, 221, 0.1);
-}
-
-.left-container {
-    flex: 1;
-    padding: 20px 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.right-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Fonts */
 
 /* almarai-300 - latin */

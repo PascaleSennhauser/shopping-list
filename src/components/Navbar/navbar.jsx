@@ -6,7 +6,7 @@ class Navbar extends Component {
     render() { 
         return (
         <nav>
-            <img src="./assets/img/logo.png" />
+            <a href="/"><img src="./assets/img/logo.png" /></a>
             What do you shop today?
         </nav>
             );
