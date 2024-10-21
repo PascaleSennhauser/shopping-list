@@ -1,1 +1,19 @@
+.container {
+    overflow-y: scroll;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.link {
+    color: black;
+}
+
+.seal {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: black;
+}
 
