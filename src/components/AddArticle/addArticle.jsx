@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import styles from './AddArticle.module.css';
 
 class AddArticle extends Component {
+    state = {}
+
+
+    /**
+     * This method adds the item of the input field to the shopping-list.
+     */
     addItem = () => {
         let name = document.getElementById('articleName').value;
         if (name.trim()) {
@@ -10,6 +16,10 @@ class AddArticle extends Component {
         }
     }
 
+
+    /**
+     * This method filters the article list to show only the articles that include the input value.
+     */
     filterItem = () => {
         let name = document.getElementById('articleName').value;
         if (name.trim()) {
@@ -18,6 +28,7 @@ class AddArticle extends Component {
             this.props.filterItems('');
         }
     }
+
 
     render() {
         return (

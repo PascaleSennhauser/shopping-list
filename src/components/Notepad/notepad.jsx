@@ -4,10 +4,20 @@ import styles from './Notepad.module.css';
 class Notepad extends Component {
     state = {}
 
+
+    /**
+     * This method removes an item based on the specified index.
+     * @param {number} index - The index of the item. 
+     */
     removeItem = (index) => {
         this.props.onRemove(index);
     };
 
+
+    /**
+     * This method adds an item to the amount based on the spcified index.
+     * @param {number} index - The index of the item.
+     */
     addAmount = (index) => {
         this.props.onAddAmount(index);
     };

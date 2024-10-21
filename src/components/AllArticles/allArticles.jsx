@@ -5,10 +5,16 @@ import styles from './AllArticles.module.css';
 class AllArticles extends Component {
     state = {}
 
+
+    /**
+     * This method adds the item to the shopping list.
+     * @param {string} name - The name of the item. 
+     */
     addItem = (name) => {
         this.props.onAddItem(name);
     }
 
+    
     render() {
         return (
             <div className={styles.outerContainer}>
