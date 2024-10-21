@@ -14,3 +14,9 @@
     cursor: pointer;
     background-color: rgb(255, 250, 147);
 }
+
+@media (max-width: 400px) {
+    .article {
+        width: 90%;
+    }
+}

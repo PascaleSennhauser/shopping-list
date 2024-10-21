@@ -24,3 +24,19 @@
     background-color: rgb(167, 231, 255);
     cursor: pointer;
 }
+
+@media (max-width: 400px) {
+    .outerContainer {
+        width: 100%;
+    }
+
+    .inputContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input {
+        width: 100%;
+    }
+}

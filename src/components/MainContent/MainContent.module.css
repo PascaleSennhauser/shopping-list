@@ -19,3 +19,19 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 740px) {
+    .contentContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .leftContainer {
+        flex: unset;
+        padding: unset;
+        align-items: center;
+    }
+}

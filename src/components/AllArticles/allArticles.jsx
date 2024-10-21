@@ -11,7 +11,7 @@ class AllArticles extends Component {
 
     render() {
         return (
-            <div>
+            <div className={styles.outerContainer}>
                 <h2>Frequent Articles</h2>
                 <div className={styles.articleContainer}>
                     { this.props.articles.map((article, index) => <Article key={index} onAdd={() => this.addItem(article)} title={article} />)}

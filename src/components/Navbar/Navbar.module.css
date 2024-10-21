@@ -15,3 +15,13 @@
 .image:hover {
     cursor: pointer;
 }
+
+@media (max-width: 740px) {
+    .navbar {
+        padding: 8px 16px;
+    }
+
+    .text {
+        display: none;
+    }
+}

@@ -7,7 +7,7 @@ class Navbar extends Component {
         return (
         <nav className={styles.navbar}>
             <a href="/"><img className={styles.image} src="./assets/img/logo.png" /></a>
-            What do you shop today?
+            <span className={styles.text}>What do you shop today?</span>
         </nav>
             );
     }

@@ -19,19 +19,21 @@ class AddArticle extends Component {
         }
     }
 
-    render() { 
+    render() {
         return (
-            <div>
+            <div className={styles.outerContainer}>
                 <h2>Search for an article</h2>
-                <input 
-                    className={styles.input}
-                    id="articleName" 
-                    onInput={this.filterItem}
-                />
-                <button className={styles.btn} onClick={this.addItem}>Add article</button>
+                <div className={styles.inputContainer}>
+                    <input
+                        className={styles.input}
+                        id="articleName"
+                        onInput={this.filterItem}
+                    />
+                    <button className={styles.btn} onClick={this.addItem}>Add article</button>
+                </div>
             </div>
         );
     }
 }
- 
+
 export default AddArticle;

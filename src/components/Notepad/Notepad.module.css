@@ -34,3 +34,13 @@
 .spanEl {
     cursor: pointer;
 }
+
+@media (max-width: 400px) {
+    .notepad {
+        width: 100%;
+    }
+
+    .product {
+        max-width: 160px;
+    }
+}
