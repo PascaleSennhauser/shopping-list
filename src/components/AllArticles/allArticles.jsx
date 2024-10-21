@@ -9,16 +9,16 @@ class AllArticles extends Component {
             <div>
                 <h2>Frequent Articles</h2>
                 <div className={classes.articleContainer}>
-                    <Article />
-                    <Article />
-                    <Article />
-                    <Article />
-                    <Article />
-                    <Article />
-                    <Article />
-                    <Article />
-                    <Article />
-                    <Article />
+                    <Article title="Apple"/>
+                    <Article title="Banana"/>
+                    <Article title="Pear"/>
+                    <Article title="Milk"/>
+                    <Article title="Bread"/>
+                    <Article title="Chocolate"/>
+                    <Article title="Spaghetti"/>
+                    <Article title="Oats"/>
+                    <Article title="Yoghurt"/>
+                    <Article title="Rice"/>
 
                 </div>
             </div>

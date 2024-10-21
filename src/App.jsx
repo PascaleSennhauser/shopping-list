@@ -4,6 +4,7 @@ import Footer from './components/Footer/footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Imprint from './components/Imprint/imprint';
 import MainContent from './components/MainContent/mainContent';
+import './App.css';
 
 class App extends Component {
     state = {}

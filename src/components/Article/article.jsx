@@ -6,7 +6,7 @@ class Article extends Component {
     render() { 
         return (
             <div className={classes.article}>
-                Apple
+                {this.props.title}
             </div>
         );
     }
