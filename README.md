@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Shopping list
+
+This project is a shopping list created with React. You can add items from a list to the shopping list or add specific items through an input field.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
