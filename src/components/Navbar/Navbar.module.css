@@ -1,4 +1,4 @@
-nav {
+.navbar {
     height: 100px;
     background-color: #5ba8ff;
     padding: 8px 100px;
@@ -8,10 +8,10 @@ nav {
     align-items: center;
 }
 
-nav img {
+.image {
     height: 80px;
 }
 
-nav img:hover {
+.image:hover {
     cursor: pointer;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Notepad.css';
+import styles from './Notepad.module.css';
 
 class Notepad extends Component {
     state = {}
@@ -15,16 +15,16 @@ class Notepad extends Component {
 
     render() {
         return (
-            <div className="notepad">
-                <h2>Shopping list:</h2>
-                <ul>
+            <div className={styles.notepad}>
+                <h2 className={styles.title}>Shopping list:</h2>
+                <ul className={styles.list}>
                     {this.props.items.map((item, index) => (
-                        <li key={index}>
-                            <div className="product">• {item.name}</div>
+                        <li className={styles.listEl} key={index}>
+                            <div className={styles.product}>• {item.name}</div>
                             <div>
-                                <span onClick={() => this.removeItem(index)}>- </span>
+                                <span className={styles.spanEl} onClick={() => this.removeItem(index)}>- </span>
                                 {item.amount}
-                                <span onClick={() => this.addAmount(index)}> +</span>
+                                <span className={styles.spanEl} onClick={() => this.addAmount(index)}> +</span>
                             </div>
                         </li>
                     ))}

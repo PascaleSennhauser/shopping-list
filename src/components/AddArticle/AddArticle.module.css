@@ -1,4 +1,4 @@
-input {
+.input {
     width: 200px;
     height: 30px;
     margin-right: 10px;
@@ -11,7 +11,7 @@ input {
     font-family: 'Almarai';
 }
 
-button {
+.btn {
     height: 30px;
     width: 100px;
     background-color: rgba(167, 231, 255, 0.5);
@@ -20,7 +20,7 @@ button {
     font-family: 'Almarai';
 }
 
-button:hover {
+.btn:hover {
     background-color: rgb(167, 231, 255);
     cursor: pointer;
 }

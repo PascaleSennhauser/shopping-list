@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './Imprint.module.css'
 
 class Imprint extends Component {
     state = {}
@@ -6,7 +7,7 @@ class Imprint extends Component {
         return (
         <div>
             <ul>
-                <li>Favicon and logo: <a href="https://app.logomakr.com/">https://app.logomakr.com/</a></li>
+                <li>Favicon and logo: <a href="https://app.logomakr.com/"> https://app.logomakr.com/</a></li>
             </ul>
         </div>
         );

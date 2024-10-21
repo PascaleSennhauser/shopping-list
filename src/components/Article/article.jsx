@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import classes from './Article.module.css';
+import styles from './Article.module.css';
 
 class Article extends Component {
     state = {  } 
     render() { 
         return (
-            <div onClick={this.props.onAdd} className={classes.article}>
+            <div onClick={this.props.onAdd} className={styles.article}>
                 {this.props.title}
             </div>
         );

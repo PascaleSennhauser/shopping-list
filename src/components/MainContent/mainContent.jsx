@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AddArticle from './../AddArticle/addArticle';
 import AllArticles from './../AllArticles/allArticles';
 import Notepad from './../Notepad/notepad';
-import './MainContent.css';
+import styles from './MainContent.module.css';
 
 class MainContent extends Component {
     state = {
@@ -65,12 +65,12 @@ class MainContent extends Component {
 
     render() {
         return (
-            <div className="content-container">
-                <div className="left-container">
+            <div className={styles.contentContainer}>
+                <div className={styles.leftContainer}>
                     <AddArticle onAddItem={this.addItem} filterItems={this.filterItem}/>
                     <AllArticles onAddItem={this.addItem} articles={this.state.filteredArticles.length > 0 ? this.state.filteredArticles : this.state.articles} />
                 </div>
-                <div className="right-container">
+                <div className={styles.rightContainer}>
                     <Notepad items={this.state.items} onRemove={this.removeItem} onAddAmount={this.addAmount} />
                 </div>
             </div>

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './Footer.css';
+import styles from './Footer.module.css';
 
 class Footer extends Component {
     state = {  } 
     render() { 
         return (
-            <footer>
-                <a href="imprint">Imprint & Privacy Policy</a>
+            <footer className={styles.footer}>
+                <a className={styles.link} href="imprint">Imprint & Privacy Policy</a>
             </footer>
         );
     }

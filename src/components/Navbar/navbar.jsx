@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import './Navbar.css';
+import styles from './Navbar.module.css';
 
 class Navbar extends Component {
     state = {  } 
     render() { 
         return (
-        <nav>
-            <a href="/"><img src="./assets/img/logo.png" /></a>
+        <nav className={styles.navbar}>
+            <a href="/"><img className={styles.image} src="./assets/img/logo.png" /></a>
             What do you shop today?
         </nav>
             );

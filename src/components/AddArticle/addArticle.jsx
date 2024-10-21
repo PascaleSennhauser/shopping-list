@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import './AddArticle.css';
+import styles from './AddArticle.module.css';
 
 class AddArticle extends Component {
     addItem = () => {
-        // Den Namen direkt aus dem Eingabefeld abfragen
         let name = document.getElementById('articleName').value;
-        if (name.trim()) { // Überprüfen, ob der Name nicht nur aus Leerzeichen besteht
-            this.props.onAddItem(name); // Artikel hinzufügen
-            document.getElementById('articleName').value = ''; // Eingabefeld zurücksetzen
+        if (name.trim()) {
+            this.props.onAddItem(name);
+            document.getElementById('articleName').value = '';
         }
     }
 
@@ -16,7 +15,7 @@ class AddArticle extends Component {
         if (name.trim()) {
             this.props.filterItems(name);
         } else {
-            this.props.filterItems(''); // Alle Artikel anzeigen, wenn das Feld leer ist
+            this.props.filterItems('');
         }
     }
 
@@ -25,10 +24,11 @@ class AddArticle extends Component {
             <div>
                 <h2>Search for an article</h2>
                 <input 
+                    className={styles.input}
                     id="articleName" 
-                    onInput={this.filterItem} // Setze die Filter-Methode beim Eingeben
+                    onInput={this.filterItem}
                 />
-                <button onClick={this.addItem}>Add article</button>
+                <button className={styles.btn} onClick={this.addItem}>Add article</button>
             </div>
         );
     }
