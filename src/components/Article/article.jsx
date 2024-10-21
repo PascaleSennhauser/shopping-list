@@ -5,7 +5,7 @@ class Article extends Component {
     state = {  } 
     render() { 
         return (
-            <div className={classes.article}>
+            <div onClick={this.props.onAdd} className={classes.article}>
                 {this.props.title}
             </div>
         );

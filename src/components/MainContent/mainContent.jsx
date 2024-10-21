@@ -6,16 +6,35 @@ import './MainContent.css';
 
 
 class MainContent extends Component {
-    state = {}
+    state = {
+        items: []
+    }
+
+    addItem = (name) => {
+        let currentItems = this.state.items;
+
+        let existingItem = this.state.items.find(item => item.name == name);
+        if (existingItem) {
+            existingItem.amount++;
+        } else {
+            currentItems.push({
+                amount: 1,
+                name: name
+            });
+        }
+        this.setState({
+            items: currentItems
+        });
+    }
     render() {
         return (
             <div className="content-container">
                 <div className="left-container">
                     <AddArticle />
-                    <AllArticles />
+                    <AllArticles onAddItem={this.addItem} />
                 </div>
                 <div className="right-container">
-                    <Notepad />
+                    <Notepad items={this.state.items} />
                 </div>
             </div>
         );
