@@ -6,7 +6,9 @@ import './MainContent.css';
 
 class MainContent extends Component {
     state = {
-        items: []
+        items: [],
+        articles: ['Apple', 'Banana', 'Pear', 'Milk', 'Bread', 'Chocolate', 'Spaghetti', 'Oats', 'Yoghurt', 'Rice'],
+        filteredArticles: []
     }
 
     addItem = (name) => {
@@ -30,12 +32,11 @@ class MainContent extends Component {
     removeItem = (index) => {
         let currentItems = [...this.state.items];
 
-        // Wenn das Item existiert und die Menge größer als 0 ist, Menge verringern
         if (currentItems[index] && currentItems[index].amount > 0) {
-            currentItems[index].amount--; // Menge um 1 verringern
-        if (currentItems[index].amount <= 0) {
-            currentItems.splice(index, 1);
-        }
+            currentItems[index].amount--;
+            if (currentItems[index].amount <= 0) {
+                currentItems.splice(index, 1);
+            }
 
             this.setState({
                 items: currentItems
@@ -55,12 +56,19 @@ class MainContent extends Component {
         })
     };
 
+    filterItem = (name) => {
+            const filtered = this.state.articles.filter(article =>
+                article.toLowerCase().includes(name.toLowerCase())
+            );
+            this.setState({ filteredArticles: filtered });
+    }
+
     render() {
         return (
             <div className="content-container">
                 <div className="left-container">
-                    <AddArticle />
-                    <AllArticles onAddItem={this.addItem} />
+                    <AddArticle onAddItem={this.addItem} filterItems={this.filterItem}/>
+                    <AllArticles onAddItem={this.addItem} articles={this.state.filteredArticles.length > 0 ? this.state.filteredArticles : this.state.articles} />
                 </div>
                 <div className="right-container">
                     <Notepad items={this.state.items} onRemove={this.removeItem} onAddAmount={this.addAmount} />

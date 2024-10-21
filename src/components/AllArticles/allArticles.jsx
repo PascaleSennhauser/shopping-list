@@ -3,9 +3,7 @@ import Article from '../Article/article';
 import classes from './AllArticles.module.css';
 
 class AllArticles extends Component {
-    state = {
-        articles: ['Apple', 'Banana', 'Pear', 'Milk', 'Bread', 'Chocolate', 'Spaghetti', 'Oats', 'Yoghurt', 'Rice']
-    }
+    state = {}
 
     addItem = (name) => {
         this.props.onAddItem(name);
@@ -16,7 +14,7 @@ class AllArticles extends Component {
             <div>
                 <h2>Frequent Articles</h2>
                 <div className={classes.articleContainer}>
-                    { this.state.articles.map((article, index) => <Article key={index} onAdd={() => this.addItem(article)} title={article} />)}
+                    { this.props.articles.map((article, index) => <Article key={index} onAdd={() => this.addItem(article)} title={article} />)}
                 </div>
             </div>
         );
